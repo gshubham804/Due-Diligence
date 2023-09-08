@@ -5,13 +5,13 @@ const Login = () => {
   return (
     <section className="bg-gray-50 dark:bg-gray-900">
     <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="#" className="flex items-center text-2xl font-semibold
+      <a href="#" className="flex items-center mb-8 text-2xl font-semibold
        text-gray-900 dark:text-white">
       <img
   className=" mr-2"
   src={Logo1}
   alt="logo"
-  style={{ width: "240px", height: "240px" }} // Adjust the width and height as needed
+  style={{ width: "240px", height: "50px" }} // Adjust the width and height as needed
 />
       </a>
       <div className="w-full bg-white rounded-lg shadow
