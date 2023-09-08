@@ -13,7 +13,7 @@ const StartupDetails = () => {
     teamInfo: "A team of passionate professionals",
     boardOfMembers: ["John Doe", "Jane Smith", "Alice Johnson"],
     fundingRounds: 3,
-    marketSize: "Large",
+    marketSize: "$44 Billion",
     competitors: ["Competitor A", "Competitor B", "Competitor C"],
   };
 
@@ -24,7 +24,7 @@ const StartupDetails = () => {
         <div>
           <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Score</p>
-            <p className="text-3xl font-semibold">{startupData.score}</p>
+            <p className="text-3xl font-semibold">{startupData.score}/100</p>
           </div>
           <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Funding Amount</p>
@@ -64,7 +64,7 @@ const StartupDetails = () => {
 <div className="mt-6">
   <div className="bg-green-100 text-green-600 rounded-lg p-4">
     <p className="text-xl font-semibold">Board of Members</p>
-    <ul className="list-disc pl-6 text-lg mt-2">
+    <ul className="list-disc text-black pl-6 text-lg mt-2">
       {startupData.boardOfMembers.map((member, index) => (
         <li key={index}>{member}</li>
       ))}

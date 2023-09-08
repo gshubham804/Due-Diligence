@@ -1,4 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Logo1 from "../assets/1.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -23,8 +24,8 @@ const Navbar = () => {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/home" className="flex items-center">
-          <img src={""} className="h-8 mr-3" alt="Due Diligence Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Due Diligence</span>
+          <img src={Logo1} className="h-8 w-full mr-3" alt="Due Diligence Logo" />
+          {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Due Diligence</span> */}
         </Link>
         <button
           data-collapse-toggle="navbar-default"
