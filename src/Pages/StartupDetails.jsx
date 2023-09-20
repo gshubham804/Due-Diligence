@@ -1,4 +1,3 @@
-import React from "react";
 
 const StartupDetails = () => {
   const startupData = {
@@ -24,46 +23,46 @@ const StartupDetails = () => {
         <div>
           <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Score</p>
-            <p className="text-3xl font-semibold">{startupData.score}/100</p>
+            <p className="text-black text-3xl font-semibold">{startupData.score}/100</p>
           </div>
           <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Funding Amount</p>
-            <p className="text-3xl font-semibold">{startupData.fundingAmount}</p>
+            <p className="text-black text-3xl font-semibold">{startupData.fundingAmount}</p>
           </div>
           <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Funded</p>
-            <p className={`text-3xl font-semibold ${startupData.isFunded ? 'text-green-600' : 'text-red-600'}`}>{startupData.isFunded ? "Yes" : "No"}</p>
+            <p className={`text-3xl font-semibold ${startupData.isFunded ? 'text-black' : 'text-red-600'}`}>{startupData.isFunded ? "Yes" : "No"}</p>
           </div>
           <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
             <p className="text-lg font-semibold">Year of Establishment</p>
-            <p className="text-3xl font-semibold">{startupData.establishmentYear}</p>
+            <p className="text-black text-3xl font-semibold">{startupData.establishmentYear}</p>
           </div>
         </div>
         <div>
-          <div className="bg-green-100 text-green-600 rounded-lg p-4 mb-4">
+          <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Parent Company</p>
-            <p className="text-3xl font-semibold">{startupData.parentCompany}</p>
+            <p className="text-black text-3xl font-semibold">{startupData.parentCompany}</p>
           </div>
-          <div className="bg-green-100 text-green-600 rounded-lg p-4 mb-4">
+          <div className="bg-blue-100 text-blue-600 rounded-lg p-4 mb-4">
             <p className="text-lg font-semibold">Location</p>
-            <p className="text-3xl font-semibold">{startupData.location}</p>
+            <p className="text-black text-3xl font-semibold">{startupData.location}</p>
           </div>
-          <div className="bg-green-100 text-green-600 rounded-lg p-4">
+          <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
             <p className="text-lg font-semibold">Head Office</p>
-            <p className="text-3xl font-semibold">{startupData.headOffice}</p>
+            <p className="text-black text-3xl font-semibold">{startupData.headOffice}</p>
           </div>
         </div>
       </div>
       <div className="mt-6">
   <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
     <p className="text-xl font-semibold">Team Information</p>
-    <p className="text-lg text-gray-700 mt-2">{startupData.teamInfo}</p>
+    <p className="text-black text-lg text-gray-700 mt-2">{startupData.teamInfo}</p>
   </div>
 </div>
 
 <div className="mt-6">
-  <div className="bg-green-100 text-green-600 rounded-lg p-4">
-    <p className="text-xl font-semibold">Board of Members</p>
+  <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
+    <p className="text-xl font-semibold">Key People</p>
     <ul className="list-disc text-black pl-6 text-lg mt-2">
       {startupData.boardOfMembers.map((member, index) => (
         <li key={index}>{member}</li>
@@ -75,16 +74,16 @@ const StartupDetails = () => {
 <div className="mt-6">
   <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
     <p className="text-xl font-semibold">Funding Rounds</p>
-    <p className="text-3xl font-semibold text-primary-600 mt-2">
+    <p className="text-black text-3xl font-semibold text-primary-600 mt-2">
       {startupData.fundingRounds}
     </p>
   </div>
 </div>
 
 <div className="mt-6">
-  <div className="bg-green-100 text-green-600 rounded-lg p-4">
+  <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
     <p className="text-xl font-semibold">Market Size</p>
-    <p className="text-3xl font-semibold text-primary-600 mt-2">
+    <p className="text-black text-3xl font-semibold text-primary-600 mt-2">
       {startupData.marketSize}
     </p>
   </div>
@@ -93,7 +92,7 @@ const StartupDetails = () => {
 <div className="mt-6">
   <div className="bg-blue-100 text-blue-600 rounded-lg p-4">
     <p className="text-xl font-semibold">Competitors</p>
-    <ul className="list-disc pl-6 text-lg mt-2">
+    <ul className="text-black list-disc pl-6 text-lg mt-2">
       {startupData.competitors.map((competitor, index) => (
         <li key={index}>{competitor}</li>
       ))}

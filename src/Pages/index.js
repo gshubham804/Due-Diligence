@@ -5,6 +5,7 @@ import StartupDetails from './StartupDetails';
 import UploadExcelsheet from './UploadExcelsheet';
 import Login from './Login';
 import Registration from './Registration';
+import LandingPage from './LandingPage';
 
 export {
     Home,
@@ -14,4 +15,5 @@ export {
     UploadExcelsheet,
     Login,
     Registration,
+    LandingPage,
 }

@@ -1,10 +1,7 @@
 import {FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube} from 'react-icons/fa'
-import {Link, useLocation} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 const Footer = () => {
-  const URL =useLocation().pathname;
-  if(URL==="/"){
-    return null
-  }
+  
     return (
         <footer className='flex justify-center flex-col text-center text-lg py-6 bg-gray-900 text-white'>
           <div className="flex flex-col md:justify-between md:flex-row items-center py-8 md:px-32">
