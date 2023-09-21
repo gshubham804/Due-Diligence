@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy":"http://localhost:3005",
+  "proxy":"https://dull-ox-cuff-links.cyclic.cloud",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
