@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://dull-ox-cuff-links.cyclic.cloud/', // Your backend server address
+        target: 'https://dull-ox-cuff-links.cyclic.cloud/api/', // Your backend server address
         changeOrigin: true,
       },
     },
