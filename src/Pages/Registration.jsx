@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const baseUrl = import.meta.env.VITE_REACT_BASE_URL;
@@ -21,32 +22,24 @@ const Registration = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      // Make API request here to handle registration
-      const response = await fetch(baseUrl+"auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          ventureFirmName,
-          website,
-          officialEmail,
-          password,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
+      const response = await axios.post(baseUrl + "auth/register", {
+        firstName,
+        lastName,
+        ventureFirmName,
+        website,
+        officialEmail,
+        password,
+      },
+      );
+  
+      if (response.status === 200) {
         // Registration successful, you can handle the response here
-       navigate("/home")
+        navigate("/home");
+      } else if (response.status === 400) {
+        alert("Email is already used.");
       } else {
-        alert("email is already used")
-        // console.error(data.message);
+        alert("Registration failed. Please try again later.");
       }
     } catch (error) {
       console.error(error.message);

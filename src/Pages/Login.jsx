@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo1 from "../assets/1.png";
@@ -15,32 +16,28 @@ const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      // Make API request here to handle login
-      const response = await fetch(baseUrl+"auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: 'no-cors',
-        body: JSON.stringify({ officialEmail:email, password }),
-      });
 
-      const data = await response.json();
-      if (response.ok) {
-        // Successful login, you can handle the token here
-        navigate("/home");
-      } else {
-        alert("Invalid email or password!");
-        return;
-        // console.error(data.message);
-      }
-    } catch (error) {
-      // console.error(error.message);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await axios.post(baseUrl + "auth/login", {
+      "officialEmail": email,
+      password,
     }
-  };
+    );
+
+    const data = response;
+    console.log(data);
+    if (response.status === 200) {
+      // Successful login, you can handle the token here
+      navigate("/home");
+    } 
+
+  } catch (error) {
+    alert("Invalid email or password!");
+  }
+};
+
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900">
