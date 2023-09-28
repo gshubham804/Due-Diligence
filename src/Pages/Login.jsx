@@ -27,7 +27,6 @@ const handleSubmit = async (e) => {
     );
 
     const data = response;
-    console.log(data);
     if (response.status === 200) {
       // Successful login, you can handle the token here
       navigate("/home");
