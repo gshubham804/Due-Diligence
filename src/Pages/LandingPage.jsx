@@ -11,10 +11,10 @@ const LandingPage = () => {
           <h1 className="text-5xl font-bold mb-4">Revolutionize Your Investment Strategy</h1>
           <p className="text-xl mb-8">Unlock the Power of AI-Powered Due Diligence</p>
           <a
-            href="/login"
+            href="https://forms.gle/fP7gcntWpk7njE5JA"
             className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 ease-in-out"
           >
-            Signup
+         Please fill the form to join our waiting list
           </a>
         </div>
       </header>
@@ -59,10 +59,10 @@ const LandingPage = () => {
             AI-Powered VC Due Diligence Tool
           </p>
           <a
-            href="/login"
+            href="https://forms.gle/fP7gcntWpk7njE5JA"
             className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 ease-in-out"
           >
-            Signup
+            Please fill the form to join our waiting list
           </a>
         </div>
       </section>
@@ -102,7 +102,7 @@ const LandingPage = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-8">Your Path to Investment Success Begins Here</h2>
           <a
-            href="#signup"
+            href="https://forms.gle/fP7gcntWpk7njE5JA"
             className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 ease-in-out"
           >
             Unlock Your Free Trial Now
