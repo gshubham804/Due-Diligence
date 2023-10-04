@@ -8,7 +8,7 @@ const LandingPage = () => {
       <header className="bg-blue-500 text-white py-16 bg-cover bg-center relative">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-5xl font-bold mb-4">Revolutionize Your Investment Strategy</h1>
+          <h1 className="text-5xl font-bold mb-4">Generate a Due Diligence report in just 24 hours</h1>
           <p className="text-xl mb-8">Unlock the Power of AI-Powered Due Diligence</p>
           <a
             href="https://forms.gle/fP7gcntWpk7njE5JA"
@@ -91,6 +91,44 @@ const LandingPage = () => {
               <h3 className="text-2xl font-semibold mb-4">Real-time Data Integration</h3>
               <p className="text-gray-700">
                 Our cutting-edge ML algorithm sources data from government records, public sources, and social media.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-semibold text-center mb-8">Instead of Competitive Advantages: Why DueDiligenceBot?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Problem 1 */}
+            <div className="p-8 bg-white rounded-lg shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4">Scalability</h3>
+              <p className="text-gray-700">
+               Conduct due diligence for multiple startups simultaneously
+              </p>
+            </div>
+
+            {/* Problem 2 */}
+            <div className="p-8 bg-white rounded-lg shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4">Accuracy</h3>
+              <p className="text-gray-700">
+               Analysis of real-time data from government, social media, Angellist, Pitchbook, etc.              </p>
+            </div>
+
+            {/* Problem 3 */}
+            <div className="p-8 bg-white rounded-lg shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4">Speed</h3>
+              <p className="text-gray-700">
+               Due Diligence report in just 24 hours-3 click solution
+              </p>
+            </div>
+
+            {/* Problem 4 */}
+            <div className="p-8 bg-white rounded-lg shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4">Easy</h3>
+              <p className="text-gray-700">
+               Integration with CRMs, Dealflow solutions or Use independently
               </p>
             </div>
           </div>
