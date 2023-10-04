@@ -22,8 +22,8 @@ const LandingPage = () => {
       {/* Section 1: Problem Statement */}
       <section className="py-12">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-8">The Challenge in Venture Capital</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-semibold text-center my-12">The Challenge in Venture Capital</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Problem 1 */}
             <div className="p-8 bg-white rounded-lg shadow-xl">
               <h3 className="text-2xl font-semibold mb-4">Manual Due Diligence</h3>
@@ -99,8 +99,8 @@ const LandingPage = () => {
 
       <section className="py-12">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-8">Instead of Competitive Advantages: Why DueDiligenceBot?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-3xl font-semibold text-center mb-16">Why DueDiligenceBot?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Problem 1 */}
             <div className="p-8 bg-white rounded-lg shadow-xl">
               <h3 className="text-2xl font-semibold mb-4">Scalability</h3>
