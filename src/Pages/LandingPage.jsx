@@ -143,7 +143,7 @@ const LandingPage = () => {
             href="https://forms.gle/fP7gcntWpk7njE5JA"
             className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 ease-in-out"
           >
-            Unlock Your Free Trial Now
+            Register now
           </a>
         </div>
       </section>
@@ -154,7 +154,7 @@ const LandingPage = () => {
           <h2 className="text-3xl font-semibold mb-8">Stay In the Know</h2>
           <p className="text-xl text-gray-700 mb-8">Subscribe to our newsletter for the latest insights, industry trends, and updates on venture capital.</p>
           <a
-            href="/login"
+            href="https://forms.gle/fP7gcntWpk7njE5JA"
             className="bg-blue-500 hover:bg-blue-400 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 ease-in-out"
           >
             Subscribe Now
@@ -168,8 +168,11 @@ const LandingPage = () => {
           <h2 className="text-3xl font-semibold mb-8">Contact Us</h2>
           <p className="text-xl text-gray-700 mb-8">Got questions or need assistance? Contact our team anytime.</p>
           <a
-            href="https://www.luster.network/contactus"
-            className="bg-blue-500 hover:bg-blue-400 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 ease-in-out"
+            href="mailto:ceo@luster.network"
+            className="bg-blue-500 hover:bg-blue-400
+             text-white font-semibold py-3 px-8
+              rounded-full shadow-lg transition
+               duration-300 transform hover:scale-105 ease-in-out"
           >
             Contact Now
           </a>

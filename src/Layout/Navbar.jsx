@@ -48,48 +48,57 @@ const Navbar = () => {
             ></path>
           </svg>
         </button>
-        {location.pathname!=="/" && 
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <Link to="/home">
-              <p
-                className={`block py-2 pl-3 pr-4 ${
-                  isActive("/home")
-                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                    : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }`}
-                aria-current="page"
-              >
-                Home
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link to="/dashboard">
-              <p
-                className={`block py-2 pl-3 pr-4 ${
-                  isActive("/dashboard")
-                    ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                    : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }`}
-              >
-                Dashboard
-              </p>
-            </Link>
+        {location.pathname!=="/" ?
+        (
+          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <Link to="/home">
+                <p
+                  className={`block py-2 pl-3 pr-4 ${
+                    isActive("/home")
+                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                      : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  }`}
+                  aria-current="page"
+                >
+                  Home
+                </p>
+              </Link>
             </li>
-          <button
-            onClick={handleSignOut}
-            className={`block py-2 pl-3 pr-4 ${
-              isActive("/login")
-                ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            }`}
-          >
-            Sign out
-          </button>
-        </ul>
-      </div>}
+            <li>
+              <Link to="/dashboard">
+                <p
+                  className={`block py-2 pl-3 pr-4 ${
+                    isActive("/dashboard")
+                      ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                      : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  }`}
+                >
+                  Dashboard
+                </p>
+              </Link>
+              </li>
+            <button
+              onClick={handleSignOut}
+              className={`block py-2 pl-3 pr-4 ${
+                isActive("/login")
+                  ? "text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  : "text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              }`}
+            >
+              Sign out
+            </button>
+          </ul>
+        </div>
+        ):(
+          <div>
+            <Link to="/registration"> 
+            <button className='font-medium text-xl'>Signup</button>
+            </Link>
+          </div>
+        )
+       }
         
       </div>
     </nav>

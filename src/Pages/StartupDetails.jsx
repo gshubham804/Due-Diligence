@@ -262,12 +262,9 @@ const StartupDetails = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Risk Assessment</h2>
         <ul className="list-none list-inside text-gray-700">
-          {startupData.risks.map((risk, index) => (
-            <li className="flex mb-2" key={index}>
-              <FaExclamationTriangle className="mr-2 text-red-500" />
-              {risk}
-            </li>
-          ))}
+          <FaFlag className="text-green-500 mb-4"/>
+          <FaFlag className="text-orange-500 mb-4"/>
+          <FaFlag className="text-red-600"/>
         </ul>
       </section>
 
